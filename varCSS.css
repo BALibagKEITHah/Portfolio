@@ -1,0 +1,53 @@
+/*Card Profile*/
+.container 
+{
+  padding: 2px 20px;
+  display: flex; 
+  justify-content: center;
+}
+
+.card 
+{
+  box-shadow: 0 13px 25px 0 grey;
+  width: 70%; 
+  padding: 0px 5px 0px 20px;
+  border-radius: 7px;
+}
+
+.sulat{  font-family: 'Verdana, Geneva, sans-serif';}
+body{background-image: url("bg.png");}
+
+
+/* Projects */
+.collapsible 
+{
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  font-family: 'Verdana, Geneva, sans-serif';
+}
+
+.active, .collapsible:hover {background-color: black;}
+
+.content 
+{
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  color: white;
+  background-color: #231709;
+  margin-top: -11px;
+  margin-bottom: 10px;
+  font-family: 'Verdana, Geneva, sans-serif';
+}
+
+
+/*font-family: 'Pixelify Sans'; <-- For pixelated fonts*/
