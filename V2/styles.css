@@ -1,0 +1,150 @@
+/* =============== RESET DEFAULT STYLES =============== */
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Catamaran"; /* "Catamaran" , "argent-cf", serif   , Clarion , Neue Haas Grotesk */
+}
+
+
+
+/* =============== PAGE BACKGROUND =============== */
+body 
+{
+  background-image: url(pictures/gameboy.png);
+  color: #081820FF;
+  min-height: 100vh;
+}
+
+
+
+/* =============== TOPBAR =============== */
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #346856FF;
+}
+
+ul li {float: left;}
+
+ul li img
+{
+  align-content: center;
+  width: 40px; 
+  height: 40px;
+  margin: 8px 10px 0px 10px; /*Top, Right, Bottom, Left*/
+  border-radius: 50px;
+}
+
+ul li a 
+{
+  display: block;
+  color: #E0F8D0FF;
+  text-align: center;
+  padding: 20px 25px; /*Top Bottom , Left Right*/
+  text-decoration: none;
+  font-family: Clarion;
+}
+
+ul li a:hover {background-color: #081820FF;}
+
+
+
+/* =============== "CAROSEL" =============== */
+.carousel::-webkit-scrollbar {display: none;}
+.carousel 
+{
+  width: 86%;
+  overflow-x: auto;
+  margin: 3em auto;
+  display: flex;
+  gap: 1em;
+  scroll-behavior: smooth;
+  anchor-name: --carousel;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel::scroll-button(left)
+{
+  content: ' < ';
+  position-anchor: --carousel;
+  position-area: left center;
+  border: none;
+  background-color: #346856FF;
+  font-family: Consolas;
+  font-size: 2rem;
+  color: #E0F8D0FF;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding-bottom: .1em;
+  cursor:pointer;
+  position: fixed;
+  translate: 10%;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel::scroll-button(right)
+{
+  content: ' > ';
+  position-anchor: --carousel;
+  position-area: right center;
+  border: none;
+  background-color: #346856FF;
+  font-family: Consolas;
+  font-size: 2rem;
+  color: #E0F8D0FF;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding-bottom: .1em;
+  cursor:pointer;
+  position: fixed;
+  translate: -10%;
+  scroll-snap-type: x mandatory;
+
+}
+
+.card
+{
+  scroll-snap-align: start;
+  flex: 0 0 20em;
+  height: 12em;
+  background-color: #E0F8D0FF;
+  padding: .5em;
+  border-radius: .5em;
+  text-align: center;
+  align-content: center;
+}
+
+.card h3 {font-family: Clarion;}
+
+@media (max-width: 9999px){.card{flex: 0 0 100%;} } 
+
+
+
+/* =============== BOTTOM BAR =============== */
+.bottomBar
+{
+  background-color: #346856FF;
+  color: #E0F8D0FF;
+  font-size: x-small;
+  width: 100%;
+  padding: 30px;
+  bottom: 0;
+  position: absolute;
+}
+
+
+
+/* [ COLOR GUIDE ]
+  Lightest - E0F8D0FF
+  Light    - 88C070FF 
+  Dark     - 346856FF
+  Darkest  - 081820FF
+
+*/
