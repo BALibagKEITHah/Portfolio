@@ -12,7 +12,7 @@
 /* =============== PAGE BACKGROUND =============== */
 body 
 {
-  background-image: url(pictures/gameboy.png);
+  background-image: url(gameboy.png);
   color: #081820FF;
   min-height: 100vh;
 }
